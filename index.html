@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Quiz App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="quiz-container">
+      <div id="quiz-header">
+        <h1>Interactive Quiz</h1>
+        <p id="timer">Time: <span id="time">60</span>s</p>
+      </div>
+
+      <div id="quiz">
+        <div id="question">Question text here</div>
+        <ul id="options">
+          <!-- Answer options will be inserted dynamically -->
+        </ul>
+        <button id="submit-btn">Submit</button>
+      </div>
+
+      <div id="result-container" style="display: none">
+        <h2>Quiz Completed!</h2>
+        <p>Your score: <span id="score"></span></p>
+        <button id="restart-btn">Restart Quiz</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
